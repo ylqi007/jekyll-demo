@@ -1,25 +1,22 @@
 ---
 # front matter tells Jekyll to process Liquid
+layout: default
 title: Home-Index Page
 number: 1314
 ---
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }} - {{ page.number }}</title>
-  </head>
 
-  <body>
-    <h1>Hello World!</h1>
+<h1>Hello World!</h1>
 
-    <h2>1. Setup</h2>
-    <p>Let's add the first file. Create `index.html` in the root with the following content.</p>
+<h2>1. Setup</h2>
+<p>Let's add the first file. Create `index.html` in the root with the following content.</p>
 
-    <h2>2. Liquid</h2>
-    <p>Use Liquid to change "Hello World!" to lowercase. But initially, this does not work, since we did not add front matter yet.</p>
-    <h3>{{ "HELLO WORLD!" | downcase}}</h3>
-    <p>Add "front matter" to the top of this page, i.e. `index.html` file. This time we can see the lowercase of "HELLO WORLD!"</p>
-    <h3>{{ "HELLO WORLD!" | downcase}}</h3>
-  </body>
-</html>
+<h2>2. Liquid</h2>
+<p>Use Liquid to change "Hello World!" to lowercase. But initially, this does not work, since we did not add front matter yet.</p>
+<h3>{{ "HELLO WORLD!" | downcase}}</h3>
+<p>Add "front matter" to the top of this page, i.e. `index.html` file. This time we can see the lowercase of "HELLO WORLD!"</p>
+<h3>{{ "HELLO WORLD!" | downcase}}</h3>
+
+<h2>3. Remove redundant content and using default layout</h2>
+<p>This time, we just keep front matter and content in the body.</p>
+
+<h2 style="text-align: center;">test</h2>
