@@ -1,1 +1,1 @@
-Sitemap: /jekyll-demo/sitemap.xml
+Sitemap: https://ylqi007.github.io/jekyll-demo/sitemap.xml
