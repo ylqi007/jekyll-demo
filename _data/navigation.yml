@@ -1,6 +1,8 @@
-- name: Home Page
+- name: Home
   link: /
-- name: About Page
+- name: About
   link: /about.html
-- name: Blogs List Page
+- name: Blogs
   link: /blogs.html
+- name: Staff
+  link: /staff.html
