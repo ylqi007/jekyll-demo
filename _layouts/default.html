@@ -3,15 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
     <title>{{ page.title - page.number }}</title>
     {% feed_meta %}
     {% seo %}
 </head>
 <body>
     {% include navigation.html %}
-    {{ content }}   
-    {{ site.url }}
-    {{ site.baseurl }} 
+    {{ content }} 
+
+    <h2 style="color: aqua;">URL Info</h2>  
+    <p>site.url: {{ site.url }}</p>
+    <p>site.baseurl: {{ site.baseurl }}</p>
+    <p>page.url: {{ page.url }}</p>
+
+    <h2 style="color: brown;">content of navigation.yml</h2>
+    {% for item in site.data.navigation %}
+        <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %} class="current" {% endif %}>{{ item.name }}</a>
+    {% endfor %}
+
+    <h2 style="color: burlywood;">content of navigation.yml</h2>
+    {% for item in site.data.navigation %}
+        {{ item.name }} -- {{ site.baseurl }}{{ item.link }}
+    {% endfor %}
 </body>
 </html>
