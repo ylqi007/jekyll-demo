@@ -1,6 +1,5 @@
 ---
 # front matter tells Jekyll to process Liquid
-layout: default
 title: About Page
 number: 1314
 ---
