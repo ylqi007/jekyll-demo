@@ -23,5 +23,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-url: https://ylqi007.github.io
-baseurl: /jekyll-demo
+baseurl: ""
