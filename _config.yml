@@ -24,4 +24,4 @@ plugins:
   - jekyll-seo-tag
 
 url: https://ylqi007.github.io
-baseurl: &baseurl /jekyll-demo
+baseurl: /jekyll-demo
